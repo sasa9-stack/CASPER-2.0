@@ -6,11 +6,19 @@
     <title>Casper</title>
     <link rel="stylesheet" href="css/main.css" />
     <title>Manage Landing Page</title>
+    <style>
+        .carousel-slide {
+            display: none;
+        }
+        .carousel-slide.active {
+            display: block;
+        }
+    </style>
 </head>
 <body class="font-poppins">
 <!--Navbar-->
-<nav class="flex justify-center  bg-purple-800">
-    <div class="flex items-center mx-auto p-7 justify-between space-x-36">
+<nav class=" bg-purple-800 flex w-full">
+    <div class="flex items-center p-7 justify-between container  mx-auto">
         <!--Logo-->
         <div class="pr-28">
             <img src="/img/Logo.png" alt="" class="h-11 w-auto">
@@ -39,7 +47,7 @@
             <img src="img/Casper.png" alt="" class="h-1/2 w-auto rounded-md shadow-md md:h-1/3">
         </div>
         <!--Text-->
-        <div class="flex flex-col mb-32 space-x-12 md:w-1/2 pl-20">
+        <div class="flex flex-col mb-32 md:w-1/2 pl-20">
         <h1 class="text-4xl font-bold text-left py-9 text-purple-800">Stem Casper Schneidereit
         ind i Forenet Kredit
         </h1>
@@ -48,14 +56,14 @@
         </p>
         <!--Buttons-->
         <div class="flex justify-center md:justify-start space-x-2 w-full md:w-auto mb-10 md:flex">
-            <button class="bg-purple-800 p-4 text-white hover:text-cyan-300">
+            <button class="bg-purple-800 p-4 text-white hover:text-cyan-300 text-lg">
                 Brug din stemme
             </button>
-            <button class="bg-cyan-300 p-4 text-purple-800  hover:text-white">
+            <button class="bg-cyan-300 p-4 text-purple-800  hover:text-white text-lg">
                 Afgiv fuldmagt
             </button>
         </div>
-            <div class="flex justify-start">
+            <div class="flex justify-start md:flex md:flex-col-reverse">
                 <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-cyan-300 dark:text-purple-900">
                     <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path fill-rule="evenodd"
@@ -69,18 +77,18 @@
     </div>
 <!--Video ad-->
 </section>
-<section id="video ad" class="bg-gray-200">
+<section id="video ad" class="bg-gray-100">
      <!--Flex conatainer-->
-    <div class="container flex flex-reverse md-flex-row items center px-6 mx-auto py-16 space-y-0 md:space-y-0">
+    <div class="container flex flex-reverse md:flex-col-reverse items-center px-6 mx-auto py-16 space-y-0 md:space-y-0">
         <!--Text-->
-        <div class="w-4/5 pr-5">
+        <div class="w-full md:w-2/3">
             <h2 class="text-4xl font-bold py-6">
                 Hvorfor vil jeg i Forenet Kredit?
             </h2>
             <p class="text-lg">
                 Jeg er passioneret om at repræsentere det, der ofte kaldes udkantsdanmark, specifikt Lolland-Falster, hvor jeg bor og arbejder. Det er essentielt for os uden for de store byer som København, Århus, Odense og Aalborg, at have adgang til et effektivt realkreditmarked. Med mine omkring 50 lejemål på Lolland-Falster, har jeg oparbejdet en dyb forståelse for boligmarkedet, lokalsamfundets sammenhængskraft og de udfordringer, vi står overfor.
             </p>
-            <button class="bg-purple-800 p-4 text-white hover:text-cyan-300 mt-5">
+            <button class="bg-purple-800 p-4 text-white hover:text-cyan-300 mt-5 text-lg">
                 Stem på mig
             </button>
         </div>
@@ -90,24 +98,184 @@
         </div>
     </div>
 </section>
-<section id="little add">
+<section id="little add" class="bg-cyan-200">
     <!--Flex conatainer-->
-    <div class="container flex flex-col md-flex-row items center px-6 mx-auto py-16 space-y-0 md:space-y-0">
-        <h3>
+    <div class="container flex flex-col md-flex-row items-start px-24 mx-auto py-12 space-y-0 md:space-y-0 ">
+        <h3 class="text-4xl font-bold text-left py-9 text-purple-800">
             Sådan tilmelder du dig valget:
         </h3>
-        <div class="flex items-center">
-            <p>
+        <div class="flex items-center pb-16">
+            <p class="w-1/2 text-xl text-purple-800">
                 Tilmelding sker hurtigt og nemt på www.forenetkredit.dk via MitID. Det tager mindre end et minut.
             </p>
-            <button class="bg-purple-800 p-4 text-white hover:text-cyan-300 mt-5">
-                Stem på mig
+            <button class="bg-purple-800 p-4 text-white hover:text-cyan-300 py-5 px-5 ml-56 text-lg">
+                Gå til Forenet Kredit
             </button>
-        <p>
+        
+        </div>
+        <p class="text-purple-800">
             Er du i tvivl om du er kunde hos Totalkredit eller Nykredit? Ingen problem! Send mig en mail med din adresse, så undersøger jeg det for dig. Selv hvis du ikke er kunde, kan du stadig hjælpe ved at dele denne side med dine venner og bekendte.
         </p>
+    </div>
+</section>
+<section id="about_me" class="bg-gray-100">
+    <!--Flex conatainer-->
+    <div class="container flex  md:flex-col-reverse  px-6 mx-auto py-16 space-y-0 md:space-y-0">
+        <div class="w-full md:w-1/2">
+            <h4 class="text-4xl font-bold pb-16 md:pb-8">
+                Hvem er jeg?
+            </h4>
+            <p class="text-lg pb-16
+                q   ">
+                Jeg er en 36-årig liberal familiefar og iværksætter, opvokset i et arbejderhjem og nu bosat i Sundby, Nykøbing F. med min kone og to børn. Min baggrund spænder fra IT til ejendomsbranchen, hvor jeg driver et ejendomsselskab med næsten 50 lejemål på Lolland-Falster. 
+                <br>
+                <br>
+                Min karriere har inkluderet roller som it-tekniker, soldat, og senere som selvstændig inden for både IT og ejendom. Jeg er også medejer af byggerådgivningsvirksomheden Compara A/S og har tjent som frivillig brandmand. Min rejse har været drevet af hårdt arbejde, iværksætterånd og et ønske om at gøre en positiv forskel i mit lokalsamfund.
+            </p>
+            <button class="bg-purple-800 p-4 text-white hover:text-cyan-300 py-5 px-5  text-lg">
+                Gå til Forenet Kredit
+            </button>
+        </div>
+        <div class="order-1 md:order-2 w-full md:w-auto">
+            <img src="img/Casper-2.png" alt="">
         </div>
     </div>
 </section>
+<section id="team" class="bg-purple-800">
+    <div class="container flex flex-col md-flex-row items-center text-center px-24 mx-auto py-12 space-y-0 md:space-y-0 ">
+        <div class="flex flex-col items-center justify-center space-x-4">
+            <div class="flex items-center space-x-6">
+            <h5 class="text-white text-5xl font-bold">
+                Afgiv fuldmagt
+            </h5>
+            <div class="flex-shrink-0">
+                <img src="img/Video Badge.png" class="h-24" alt="">
+            </div>
+            </div>
+            <p class="text-white text-lg px-72 py-6">
+                Én person kan max have 6 fuldmagter til valget. Det er nemt at afgive en fuldmagt. Du skal blot logge ind i valgsystemet med Nem-ID eller med koden, som du har modtaget i E-boks.
+            </p>
+        </div>
+        <div class="flex space-x-12">
+            <div class="flex flex-col items-center">
+                <div>
+                    <img src="img/team-1.png" class="h-28 w-auto" alt="">
+                </div>
+                <div class="flex flex-col">
+                    <a href=""class="text-white">Rune Holm</a>
+                    <a href="" class="uppercase text-white"><span class="text-xs text-cyan-200 mr-2">Fuldmagts-id:</span>4KG2A</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div>
+                    <img src="img/team-2.png" class="h-28 w-auto" alt="">
+                </div>
+                <div class="flex flex-col">
+                <a href=""class="text-white">Rune Holm</a>
+                <a href="" class="uppercase text-white"><span class="text-xs text-cyan-200 mr-2">Fuldmagts-id:</span>4KG2A</a>
+                </div>
+            </div>
+            <div class="flex flex-col items-center">
+                <div>
+                    <img src="img/team-3.png" class="h-28 w-auto" alt="">
+                </div>
+                <div class="flex flex-col">
+                <a class="text-white">Casper Schneidereit</a>
+                <a href="" class="uppercase text-white"><span class="text-xs text-cyan-200 mr-2">Fuldmagts-id:</span>4KG2A</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="carousel relative w-full max-w-2xl mx-auto overflow-hidden">
+        <div class="carousel-slides flex">
+            <div class="carousel-slide active w-full flex-shrink-0">
+                <img src="img/Guldborgsund - Copy.png" alt="Slide 1" class="w-full h-auto">
+            </div>
+            <div class="carousel-slide w-full flex-shrink-0">
+                <img src="img/Background 2.jpg 2.png" alt="Slide 2" class="w-full h-auto">
+            </div>
+            <div class="carousel-slide w-full flex-shrink-0">
+                <img src="img/image3.jpg" alt="Slide 3" class="w-full h-auto">
+            </div>
+        </div>
+        <div class="carousel-dots flex justify-center mt-4">
+            <span class="dot active h-4 w-4 bg-gray-400 rounded-full mx-1 cursor-pointer"></span>
+            <span class="dot h-4 w-4 bg-gray-400 rounded-full mx-1 cursor-pointer"></span>
+            <span class="dot h-4 w-4 bg-gray-400 rounded-full mx-1 cursor-pointer"></span>
+        </div>
+        <button class="prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-black px-4 py-2 rounded">Prev</button>
+        <button class="next absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-black px-4 py-2 rounded">Next</button>
+    </div>
+</section>
+<section id="history"class="bg-gray-100">
+    <div class="container mx-auto px-6 py-6 ">
+        <div class="flex flex-col pb-5">
+            <h6 class="text-4xl font-bold">
+                Hvad er det egentlig, jeg laver?
+            </h6>
+        </div>
+        <!--paragraf-->
+        <div class="flex space-x-6 text-lg">
+            <div class="space-y-6">
+            <!--leva-->
+                <p>
+                    I 2014 startede jeg Casper Schneidereit IVS med en startkapital på 3.000 kroner. I dag, 9 år senere, er det vokset til en koncern med næsten 50 lejemål. Min forretningsmodel fokuserer på at redde og renovere ældre ejendomme, hvorefter de udlejes til ansvarlige lejere. Dette inkluderer både ældre huse, almindelige udlejningsejendomme og projektejendomme, der omdannes til boliger.
+                </p>
+                <p>
+                    Eksempel: Et nedslidt klubværelse i Maribo. er blevet gennemrenoveret med nye varme- og el-installationer, filt, maling, loft med spots o.s.v. Samtidig sørger vi for, der kommer fibernet  ind, og på den måde tager vi et lejemål, 
+                </p>
+            </div>
+            <div class="space-y-6">
+            <!--desna-->
+                <p>
+                    der makismalt kunne udljes for et par tusind kroner og gør det attraktivt for en ung mand eller kvinde, og kan samtidig hæve lejen til 3.000 kr, som stadigvæk er et attraktivt niveau.
+                </p>
+                <p class="">
+                    Det er godt for Lolland-Falster at vi får renoveret vedligeholdt vores bygninger, da det er nemmere at tiltrække gode lejere, og på den lange bane er det godt for forretningen. Det vil ikke kunne lade sig gøre, hvis ikke vi har et flydende realkreditmarked.
+                </p>
+                <div class="flex  text-sm">
+                    <div class="h-20">
+                        <!-- Picture -->
+                        <img src="img/casper-fb_s-transformed.png" alt="" class="">
+                    </div>
+                    <div>
+                    <h7 class="font-bold">Tak for din støtte!</h7>
+                    <p class="text-sm">Følg med på Facebook. Har du spørgsmål, er du altid velkommen til at sende mig en mail.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>   
+<section id="SMS" class="bg-cover bg-center " style="background-image: url('img/Image overlay.png')">    
+    <div class="container flex flex-col mx-auto">
+        <div class="flex flex-col items-end pt-20 pr-10">
+            <img src="img/sms.png" alt="">
+        </div>
+        <div class="flex flex-col items-center text-purple-800 pb-5">
+            <a href="" class="text-5xl font-bold">Bliv påmindet via SMS</a>
+            <p class="mt-10 text-lg">
+                Indtast dit telefonnummer og modtag en SMS dagen før og på selve valgdagen, så du ikke glemmer det.
+            </p>
+            <div class="mt-10 h-24">
+                <input type="text" class="border border-gray-300  px-4 py-5 focus:outline-none focus:border-blue-500 text-lg ">
+                <button class="bg-purple-800 p-4 text-white hover:text-cyan-300 py-5 px-5  text-lg ">
+                    Tilmeld SMS
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="flex container items-center mx-auto justify-center">
+        <p class="py-5">
+            © 2024 Casper Schneidereit |  Alle rettigheder forbeholdes | <span class="underline">Send besked</span>
+        </p>
+    </div>
+</footer>
 </body>
+<script src="scrpit.js"></script>></script>
 </html>
