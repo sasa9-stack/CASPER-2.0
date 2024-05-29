@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casper</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Manage Landing Page</title>
     <style>
         .carousel-slide {
@@ -187,28 +188,19 @@
         </div>
     </div>
 </section>
-<section class="bg-gray-100 flex items-center justify-center h-screen">
-    <!--Carousel-->
-    <div class="carousel relative w-full max-w-2xl mx-auto overflow-hidden">
-        <div class="carousel-slides flex">
-            <div class="carousel-slide active w-full flex-shrink-0">
-                <img src="img/Guldborgsund - Copy.png" alt="Slide 1" class="w-full h-auto">
-            </div>
-            <div class="carousel-slide w-full flex-shrink-0">
-                <img src="img/Background 2.jpg 2.png" alt="Slide 2" class="w-full h-auto">
-            </div>
-            <div class="carousel-slide w-full flex-shrink-0">
-                <img src="img/image3.jpg" alt="Slide 3" class="w-full h-auto">
-            </div>
+<section class="bg-gray-100 flex items-center justify-center min-h-screen">
+   <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <img src="img/Background 2.jpg">
         </div>
-        <div class="carousel-dots flex justify-center mt-4">
-            <span class="dot active h-4 w-4 bg-slate-600 rounded-full mx-1 cursor-pointer"></span>
-            <span class="dot h-4 w-4 bg-gray-600 rounded-full mx-1 cursor-pointer"></span>
-            <span class="dot h-4 w-4 bg-gray-600 rounded-full mx-1 cursor-pointer"></span>
-        </div>
-        <button class="prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-700 text-black px-4 py-2 rounded">Prev</button>
-        <button class="next absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-700 text-black px-4 py-2 rounded">Next</button>
+      <div class="swiper-slide"><img src="img/Guldborgsund - Copy.png"></div>
+      <div class="swiper-slide"><img src="img/image3.jpg"></div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
 </section>
 <section id="history"class="bg-gray-100">
     <div class="container mx-auto px-6 py-6 ">
@@ -278,5 +270,6 @@
     </div>
 </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="scrpit.js"></script>></script>
 </html>
