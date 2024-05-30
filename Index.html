@@ -198,9 +198,17 @@
       <div class="swiper-slide"><img src="img/Guldborgsund - Copy.png"></div>
       <div class="swiper-slide"><img src="img/image3.jpg"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next bg-fuchsia-700"></div>
+    <div class="swiper-button-prev  bg-fuchsia-700"></div>
   </div>
+  <style>
+    .custom-swiper-button {
+      @apply bg-blue-500 text-white rounded-full p-2; /* Apply Tailwind CSS classes */
+    }
+    .swiper-button-next::after, .swiper-button-prev::after {
+      color: purple; /* Change arrow color */
+    }
+  </style>
 </section>
 <section id="history"class="bg-gray-100">
     <div class="container mx-auto px-6 py-6 ">
